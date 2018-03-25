@@ -1,4 +1,3 @@
-package test;
 
 import static org.junit.Assert.*;
 
@@ -11,6 +10,7 @@ import org.junit.Test;
 public class TestPop {
 
 protected Stack stack = null;
+protected Stack2 stack2 = null;
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -26,6 +26,7 @@ protected Stack stack = null;
 	@Before 
 	public void setUp() throws Exception {
 		stack = new Stack(5);
+		stack2 = new Stack2(5);
 		
 		
 	}
@@ -47,6 +48,8 @@ protected Stack stack = null;
 		{
 			assertTrue(stack.empty());
 			stack.pop();
+			assertTrue(stack2.empty());
+			stack2.pop();
 			
 			
 			System.out.println("Req1a: true");

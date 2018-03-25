@@ -9,13 +9,13 @@
 	empty(push(x)) = false
  */
 
-public class Stack {
+public class Stack2 {
    private int maxStack;
    private int emptyStack;
    private int top;
    private char[] items;
 
-   public Stack(int size) {
+   public Stack2(int size) {
       maxStack= size;
       emptyStack = -1;
       top = emptyStack;
@@ -40,9 +40,5 @@ public class Stack {
 
    public boolean empty()  {
       return top == emptyStack;
-   }
-
-   public boolean testMeth() {
-      return true;
    }
 }
